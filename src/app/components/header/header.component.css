@@ -1,18 +1,28 @@
+/* TODO: NAVBAR APPEAR ON SCROLL UP */
+/* .navbar {
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+} */
+
 .header-tab {
-  font-size: 19px;
-  font-family: 'Manrope';
+  font-size: 15px;
   color: #878787;
   font-weight: bold;
   margin-right: 35px;
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 .button {
   border-radius: 25px;
   background-color: #30641E;
   border: none;
-  height: 50px;
-  width: 200px;
+  height: 40px;
+  width: 160px;
   margin-right: 40px;
   align-self: center;
   cursor: pointer;
