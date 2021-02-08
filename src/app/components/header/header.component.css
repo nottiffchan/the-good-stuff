@@ -10,11 +10,14 @@
   color: #878787;
   font-weight: bold;
   margin-right: 35px;
+  margin-bottom: 0;
+  align-self: center;
   cursor: pointer;
 }
 
 a {
   text-decoration: none;
+  align-self: center;
 }
 
 .button {
