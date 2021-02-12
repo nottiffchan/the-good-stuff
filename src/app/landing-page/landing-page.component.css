@@ -2,14 +2,16 @@ p {
   margin: 0;
 }
 
-.container-fluid {
-   display: flex; 
-   justify-content: space-around; 
-   align-items: center; 
-   background-color: #F0F0E5; 
-   height: 700px; 
-   padding: 50px 50px 100px 100px;
+.title-container {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #F0F0E5;
+   height: 640px;
+   padding: 100px 50px 100px 100px;
 }
+
+.container
 
 .shift-up {
   position: relative;
@@ -27,4 +29,44 @@ p {
   border: none;
   margin-top: 50px;
   outline: none;
+}
+
+.point-content {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.point-title {
+  font-size: 25px;
+  font-weight: 900;
+  color: #30641E;
+  margin: 20px 0 10px;
+}
+
+.point-description {
+  font-weight: 500;
+  font-size: 15px;
+  color: #878787;
+  text-align: center;
+}
+
+.testimonial-container {
+  background-image: url("../../assets/QuoteMark.svg");
+  background-repeat: no-repeat;
+  background-position: 10% 5%;
+  margin-top: 100px;
+  background-color: #F0F0E5;
+  height: 640px;
+  padding: 80px 50px 100px 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  box-shadow: 0 4px 40px rgb(0, 0, 0, 0.1) ;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
 }
