@@ -70,3 +70,22 @@ p {
   border-radius: 20px;
   padding: 30px;
 }
+
+.button-cta {
+  border-radius: 25px;
+  background-color: #30641E;
+  border: none;
+  height: 40px;
+  width: 160px;
+  margin-right: 40px;
+  margin-top: 30px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.cta {
+  background-image: url("../../assets/transparentbikiniman.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+}
