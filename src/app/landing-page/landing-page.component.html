@@ -14,7 +14,18 @@
   <img src="../../assets/food1.jpg" alt="food" class="shift-up" style="height: 490px; width: 490px; border-radius: 30px;">
 </div>
 
-<!-- TODO: STATISTIC -->
+<!-- STATISTIC -->
+<div class="row" style="margin: 120px 50px;">
+  <div class="col-6" style="display: flex; justify-content: center;">
+    <app-food-tile [foodItem]="washokuBowl" style="margin: 50px 40px 50px;"></app-food-tile>
+    <app-food-tile [foodItem]="mediterraneanBowl" style="margin: 50px 0;"></app-food-tile>
+  </div>
+  <div class="col-6" style="display: flex; flex-direction: column; justify-content: center;">
+    <p style="font-weight: 900; font-size: 45px; color: #30641E; text-align: center;">30+</p>
+    <p style="font-weight: bold; font-size: 22px; color: #878787; text-align: center;">different healthy menu options,</p>
+    <p style="font-weight: bold; font-size: 22px; color: #878787; text-align: center;">all fresh ingredients and cooked in house.</p>
+  </div>
+</div>
 
 <!-- POINTS -->
 <div style="margin-top: 50px;">
@@ -73,6 +84,8 @@
   </div>
 </div>
 
+
+<!-- CTA -->
 <div class="cta" style="display: flex; flex-direction: column; height: 400px; justify-content: center;">
   <p style="text-align: center; font-size: 38px; font-weight: 900;">Save your precious time, money<br>and calories with <span style="color: #30641E;">the good stuff.</span></p>
   <button type="button" class="btn button-cta">
