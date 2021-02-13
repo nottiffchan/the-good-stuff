@@ -10,6 +10,7 @@ import { MenuPageComponent } from './menu-page/menu-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FoodTileComponent } from './food-item/food-tile/food-tile.component';
 import { FoodItemPageComponent } from './food-item/food-item-page/food-item-page.component';
+import { MobileAppModule } from '../mobile/DesktopApp.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FoodItemPageComponent } from './food-item/food-item-page/food-item-page
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MobileAppModule,
     FontAwesomeModule
   ],
   providers: [],

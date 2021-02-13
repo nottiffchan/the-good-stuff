@@ -1,0 +1,9 @@
+fa-icon {
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 16px;
+  background-color: #DDE2D1;
+  cursor: pointer;
+}
