@@ -1,0 +1,63 @@
+.title-mobile-container {
+  padding: 40px 16px 80px;
+  width: 100%;
+  background-color: #F0F0E5;
+  /* height: 630px; */
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background-color: #30641E;
+  border-radius: 20px;
+  width: 145px;
+  height: 37px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.point-desc-mobile {
+  color: #878787;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+
+.testimonial-card {
+  width: 100%;
+  box-shadow: 0 4px 40px rgb(0, 0, 0, 0.1) ;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.test-container {
+  background-image: url("../../assets/QuoteMark.svg");
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: 5% 2%;
+}
+
+.button-cta {
+  border-radius: 20px;
+  background-color: #30641E;
+  border: none;
+  height: 37px;
+  width: 145px;
+  margin-top: 30px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.cta {
+  background-image: url("../../assets/transparentbikiniman.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px;
+}

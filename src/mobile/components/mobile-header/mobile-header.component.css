@@ -7,3 +7,14 @@ fa-icon {
   background-color: #DDE2D1;
   cursor: pointer;
 }
+
+.button {
+  background-color: #30641E;
+  border-radius: 20px;
+  width: 150px;
+  height: 43px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 30px;
+}

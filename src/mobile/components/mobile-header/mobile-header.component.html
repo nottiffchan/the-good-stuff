@@ -1,10 +1,27 @@
-<nav class="navbar navbar-expand-lg" style="padding: 32px 16px 12px; min-height: 56px;">
+<nav class="navbar navbar-expand-lg" style="padding: 32px 16px 12px; min-height: 56px; background-color: #F0F0E5;">
   <div class="container-fluid" style="display: flex; justify-content: space-between; align-items: center;">
     <a routerLink='' class="navbar-brand">
       <img src="../../../assets/logo.png" alt="logo" style="height: 44px; cursor: pointer;">
     </a>
 
-    <fa-icon [icon]="bars" size="lg" style="color: #30641E; font-size: 15px;"></fa-icon>
+    <fa-icon data-bs-toggle="modal" data-bs-target="#navModal" [icon]="bars" size="lg" style="color: #30641E; font-size: 15px;"></fa-icon>
 
   </div>
 </nav>
+
+
+<!-- Modal -->
+<div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="navModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="border-radius: 20px; display: flex; flex-direction: column; position: relative; top: 80px;">
+      <button type="button" style="margin: 17px; align-self: flex-end;" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body" style="display: flex; flex-direction: column; align-items: center; padding: 10px 40px 40px;">
+        <p style="font-weight: bold; font-size: 16px; color: #878787;">Menu</p>
+        <p style="font-weight: bold; font-size: 16px; color: #878787;">About</p>
+        <p style="font-weight: bold; font-size: 16px; color: #878787;">Cart</p>
+        <button type="button" class="btn button">Log in / Sign up</button>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -16,7 +16,7 @@ export class DesktopGuard implements CanActivate {
     // return true;
 
     canActivate() {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 1100) {
         this.router.navigate(['/m/']);
         return false;
       }
