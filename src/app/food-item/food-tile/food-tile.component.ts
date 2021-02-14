@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FoodItem } from '../food-item';
+import { FoodItem } from '../food-item.model';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({

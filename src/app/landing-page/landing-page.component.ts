@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faBowlingBall } from '@fortawesome/free-solid-svg-icons';
-import { FoodItem } from '../food-item/food-item';
+import { FoodItem } from '../food-item/food-item.model';
 
 @Component({
   selector: 'app-landing-page',

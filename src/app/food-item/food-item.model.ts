@@ -1,4 +1,5 @@
 export class FoodItem {
+  id!: string
   name: string;
   summary: string;
   description: string;
