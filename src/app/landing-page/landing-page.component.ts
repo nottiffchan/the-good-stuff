@@ -8,8 +8,8 @@ import { FoodItem } from '../food-item/food-item.model';
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent implements OnInit {
-  washokuBowl = new FoodItem("washoku bowl", "fresh salmon, edamame, sous vide egg", "blah", "8.50", "350", "assets/food/washokubowl.png");
-  mediterraneanBowl = new FoodItem("mediterranean bowl", "roast chicken, cherry tomatoes, sweet corn", "", "8.00", "300", "assets/food/mediterraneanbowl.png");
+  washokuBowl = new FoodItem("washoku bowl", "fresh salmon, edamame, sous vide egg", "blah", "8.50", "350", "assets/food/washokubowl.png", 'rice');
+  mediterraneanBowl = new FoodItem("mediterranean bowl", "roast chicken, cherry tomatoes, sweet corn", "", "8.00", "300", "assets/food/mediterraneanbowl.png", 'rice');
 
   constructor() { }
 

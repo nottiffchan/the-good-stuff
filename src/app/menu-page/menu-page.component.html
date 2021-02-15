@@ -1,5 +1,35 @@
 <app-header></app-header>
-<div *ngFor="let foodItem of foodItems">
-  <app-food-tile [foodItem]="foodItem"></app-food-tile>
+
+<div class="row">
+  <div class="col-3" style="display: flex; margin-top: 35px; padding-left: 112px; flex-direction: column;">
+
+    <div style="position: fixed;">
+      <div class="cat-tile" (click)="selectCat(0)" [ngClass]="{'selected': categories[0].selected, 'deselected': !categories[0].selected }">
+        <p class="cat-tile-title">Pasta</p>
+      </div>
+      <div class="cat-tile" (click)="selectCat(1)" [ngClass]="{'selected': categories[1].selected, 'deselected': !categories[1].selected }">
+        <p class="cat-tile-title">Rice</p>
+      </div>
+      <div class="cat-tile" (click)="selectCat(2)" [ngClass]="{'selected': categories[2].selected, 'deselected': !categories[2].selected }">
+        <p class="cat-tile-title">Low-Carb</p>
+      </div>
+      <div class="cat-tile" (click)="selectCat(3)" [ngClass]="{'selected': categories[3].selected, 'deselected': !categories[3].selected }">
+        <p class="cat-tile-title">Vegan</p>
+      </div>
+      <div class="cat-tile" (click)="selectCat(4)" [ngClass]="{'selected': categories[4].selected, 'deselected': !categories[4].selected }">
+        <p class="cat-tile-title">Sides</p>
+      </div>
+      <div class="cat-tile" (click)="selectCat(5)" [ngClass]="{'selected': categories[5].selected, 'deselected': !categories[5].selected }">
+        <p class="cat-tile-title">Desserts</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-8" style="margin-top: 30px; display: flex; flex-wrap: wrap; margin-left: 50px;">
+    <div *ngFor="let foodItem of foodItems">
+      <app-food-tile class="card-third" [foodItem]="foodItem"></app-food-tile>
+    </div>
+  </div>
 </div>
+
+
 <app-footer></app-footer>

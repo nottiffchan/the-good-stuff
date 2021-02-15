@@ -9,16 +9,31 @@ import { FoodItemsService } from '../services/food-items.service';
   styleUrls: ['./menu-page.component.css']
 })
 export class MenuPageComponent implements OnInit {
-  mediterraneanBowl = new FoodItem("mediterranean bowl", "roast chicken, cherry tomatoes, sweet corn", "", "8.00", "300", "assets/food/mediterraneanbowl.png");
-    foodItem = new FoodItem("truffled-up capellini al funghi", "mushrooms, cordyceps, sous vide egg" ,"topped with wild mushrooms, nourishing cordyceps flower and sous vide egg", "9.50", "400", "assets/food/washokubowl.png");
 
   foodItems: FoodItem[] = [];
   private foodSub!: Subscription;
+  
+  categories = [
+    { name: 'noodles', selected: true },
+    { name: 'rice', selected: false },
+    { name: 'low-carb', selected: false },
+    { name: 'vegan', selected: false },
+    { name: 'sides', selected: false },
+    { name: 'dessert', selected: false },
+  ];
+  currCat: any = this.categories[0];
 
   constructor(public foodSrv: FoodItemsService) { }
 
   ngOnInit(): void {
     this.getFoodItems();
+  }
+
+  selectCat(index: number) {
+    for (let i = 0; i < 6; i++) {
+      this.categories[i].selected = false;
+    }
+    this.categories[index].selected = true;
   }
 
   getFoodItems() {
