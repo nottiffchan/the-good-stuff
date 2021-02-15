@@ -24,8 +24,23 @@
       </div>
     </div>
   </div>
-  <div class="col-8" style="margin-top: 30px; display: flex; flex-wrap: wrap; margin-left: 50px;">
+  <div class="col-8" style="margin-top: 70px; margin-left: 90px; display: flex; flex-wrap: wrap;">
+    <p id="pasta">Pasta</p>
     <div *ngFor="let foodItem of foodItems">
+      <app-food-tile class="card-third" [foodItem]="foodItem"></app-food-tile>
+    </div>
+
+    <p id="rice">Rice</p>
+    <div *ngFor="let foodItem of foodItems">
+      <app-food-tile class="card-third" [foodItem]="foodItem"></app-food-tile>
+    </div>
+
+    <p  id="low-carb">Low-Carb</p>
+    <div *ngFor="let foodItem of foodItems" >
+      <app-food-tile class="card-third" [foodItem]="foodItem"></app-food-tile>
+    </div>
+
+    <div *ngFor="let foodItem of foodItems" id="vegan">
       <app-food-tile class="card-third" [foodItem]="foodItem"></app-food-tile>
     </div>
   </div>

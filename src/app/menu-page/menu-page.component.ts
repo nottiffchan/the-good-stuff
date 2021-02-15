@@ -34,6 +34,14 @@ export class MenuPageComponent implements OnInit {
       this.categories[i].selected = false;
     }
     this.categories[index].selected = true;
+    this.scrollToCat(this.categories[index].name);
+  }
+
+  scrollToCat(id: string) {
+    const maybeNull = document.getElementById(id);
+    if (maybeNull != null) {
+      maybeNull.scrollIntoView({behavior: 'smooth'});
+    }
   }
 
   getFoodItems() {

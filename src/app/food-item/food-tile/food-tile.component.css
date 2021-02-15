@@ -1,6 +1,4 @@
-.wrap {
-  margin: 40px 0;
-}
+
 
 .tile {
   height: 370px;
@@ -17,8 +15,12 @@
   
 }
 
-.tile:hover {
-  transform: scale(1.01);
+img {
+  transition: 400ms linear;
+}
+
+.tile:hover img {
+  transform: scale(1.05);
 }
 
 fa-icon {
