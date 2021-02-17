@@ -12,7 +12,7 @@ export class MenuPageComponent implements OnInit {
 
   foodItems: FoodItem[] = [];
   private foodSub!: Subscription;
-  
+
   categories = [
     { name: 'noodles', selected: true },
     { name: 'rice', selected: false },

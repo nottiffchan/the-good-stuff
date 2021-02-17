@@ -12,6 +12,8 @@ import { FoodTileComponent } from './food-item/food-tile/food-tile.component';
 import { FoodItemPageComponent } from './food-item/food-item-page/food-item-page.component';
 import { MobileAppModule } from '../mobile/DesktopApp.module';
 import { HttpClientModule } from '@angular/common/http';
+import { AdminComponent } from './admin/admin.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,8 +24,10 @@ import { HttpClientModule } from '@angular/common/http';
     MenuPageComponent,
     FoodTileComponent,
     FoodItemPageComponent,
+    AdminComponent,
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     MobileAppModule,

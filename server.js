@@ -49,4 +49,6 @@ app.set("port", port);
 const server = http.createServer(app);
 server.on("error", onError);
 server.on("listening", onListening);
-server.listen(port);
+server.listen(port, function() {
+  console.log('\x1b[36m%s\x1b[0m', "TIFFANY SERVER LISTENING AT PORT " + port);
+});

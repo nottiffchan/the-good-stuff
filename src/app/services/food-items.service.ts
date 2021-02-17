@@ -9,6 +9,7 @@ import { Subject } from 'rxjs';
 export class FoodItemsService {
   private foodItems: FoodItem[] = [];
   private foodItemsUpdated = new Subject<FoodItem[]>();
+  apiUrl = 'http://localhost:3000/api'
 
   constructor(private http: HttpClient) { }
 
@@ -17,8 +18,16 @@ export class FoodItemsService {
   }
 
   getFoodItems() {
-    return this.http.get<{data: FoodItem[]}>('http://localhost:3000/api/foodItems').subscribe((foodItemData) => {
+    return this.http.get<{result: string, data: FoodItem[]}>(`${this.apiUrl}/getFoodItems`).subscribe((foodItemData) => {
       this.foodItems = foodItemData.data;
+      this.foodItemsUpdated.next([...this.foodItems]);
+    });
+  }
+
+  addFoodItem(foodItem: FoodItem) {
+    this.http.post<{result: string}>(`${this.apiUrl}/addFoodItem`, foodItem).subscribe(res => {
+      console.log(res.result)
+      this.foodItems.push(foodItem);
       this.foodItemsUpdated.next([...this.foodItems]);
     });
   }

@@ -1,0 +1,88 @@
+<p>Add new Menu Item</p>
+
+<form [formGroup]="foodItemForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label>
+      Item Name
+      <input id="name" type="text" formControlName="name">
+    </label>
+    <div *ngIf="f['name'].invalid && (f['name'].dirty || f['name'].touched)"
+      class="alert alert-danger">
+      <div *ngIf="f['name'].errors!.required">
+        Name is required.
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <label>
+      Short summary
+      <input type="text" formControlName="summary">
+    </label>
+    <div *ngIf="f['summary'].invalid && (f['summary'].dirty || f['summary'].touched)"
+    class="alert alert-danger">
+      <div *ngIf="f['summary'].errors!.required">
+      Summary is required.
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <label>
+      Longer Description
+      <input type="text" formControlName="description">
+    </label>
+    <div *ngIf="f['description'].invalid && (f['description'].dirty || f['description'].touched)"
+      class="alert alert-danger">
+      <div *ngIf="f['description'].errors!.required">
+      description is required.
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <label>
+      Price
+      <input type="text" formControlName="price">
+    </label>
+    <div *ngIf="f['price'].invalid && (f['price'].dirty || f['price'].touched)"
+class="alert alert-danger">
+        <div *ngIf="f['price'].errors!.required">
+            price is required.
+        </div>
+    </div>
+  </div>
+
+  <div>
+    <label>
+      Calories
+      <input type="text" formControlName="calories">
+    </label>
+  </div>
+
+  <div>
+    <label>
+      Image path (REPLACE THIS WITH IMAGE UPLOAD)
+      <input type="text" formControlName="imagePath">
+    </label>
+    <div *ngIf="f['imagePath'].invalid && (f['imagePath'].dirty || f['imagePath'].touched)"
+class="alert alert-danger">
+        <div *ngIf="f['imagePath'].errors!.required">
+            imagePath is required.
+        </div>
+    </div>
+  </div>
+
+  <div>
+    <label>
+      Category: noodles, rice, vegan, low-carb, sides, desserts
+      <input type="text" formControlName="category">
+    </label>
+    <div *ngIf="f['category'].invalid && (f['category'].dirty || f['category'].touched)" class="alert alert-danger">
+      <div *ngIf="f['category'].errors!.required">
+          price is required.
+      </div>
+    </div>
+  </div>
+</form>
+<button type="submit" (click)="onSubmit()" class="btn btn-primary">Submit</button>
